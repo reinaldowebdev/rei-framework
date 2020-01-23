@@ -11,17 +11,19 @@ class Route
 
     public function __construct()
     {
-        $this->requestedRoute = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $this->resolveRequest($this->requestedRoute);
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $scriptName = $_SERVER['SCRIPT_NAME'];
+        $this->requestedRoute = preg_replace('/^' . preg_quote(str_replace('index.php', '', $scriptName), '/') . '/', '', $uri);
+        $this->resolveRequest();
     }
 
-    private function resolveRequest($route)
+    private function resolveRequest()
     {
-        if ($route == '/') {
-            $route = $this->defaulRoute;
+        if ($this->requestedRoute == '') {
+            $this->requestedRoute = $this->defaulRoute;
         }
         $defaultAction = 'index';
-        $request = array_values(array_filter(explode('/', $route)));
+        $request = array_values(array_filter(explode('/', $this->requestedRoute)));
         if (count($request) < 2) {
             $request[1] = $defaultAction;
         }
