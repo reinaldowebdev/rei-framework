@@ -1,5 +1,5 @@
 {
-    "name": "boritech/reiframework",
+    "name": "reiwebdev/reiframework",
     "type": "project",
     "require": {
         "php": "^7.2",
