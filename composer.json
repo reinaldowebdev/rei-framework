@@ -1,8 +1,20 @@
 {
     "name": "reiwebdev/reiframework",
-    "type": "project",
+    "type": "library",
+    "description": "Simple framework php",
+    "keywords": ["framework", "php"],
+    "homepage": "https://github.com/reinaldowebdev/rei-framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reinaldo",
+            "email": "reinaldoproweb@gmail.com",
+            "homepage": "https://github.com/reinaldowebdev",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": "^7.2",
+        "php": ">=7.2",
         "twbs/bootstrap": "4.0.0",
         "components/jquery": "^3.4"
     },

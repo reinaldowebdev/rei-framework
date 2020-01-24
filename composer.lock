@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d314e5726105d4a2efee0eb6d1866f70",
+    "content-hash": "81286c1172a803e4122dccebfd0c4b3e",
     "packages": [
         {
             "name": "components/jquery",
@@ -107,7 +107,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.2"
+        "php": ">=7.2"
     },
     "platform-dev": []
 }
