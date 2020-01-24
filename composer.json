@@ -6,6 +6,11 @@
         "twbs/bootstrap": "4.0.0",
         "components/jquery": "^3.4"
     },
+    "scripts": {
+        "post-install-cmd": [
+            "php config/dependency-manager.php"
+        ]
+    },
     "autoload": {
         "psr-4": {
             "src\\": "src/"
