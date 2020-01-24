@@ -2,6 +2,10 @@
 const PATH_PUBLIC_ASSETS = __DIR__ . '/../public/assets';
 const PATH_VENDOR = __DIR__ . '/../vendor';
 
+if (!is_dir(PATH_PUBLIC_ASSETS)) {
+    mkdir(PATH_PUBLIC_ASSETS);
+}
+
 $dependencies = [
     'bootstrap' => [
         'name' => 'bootstrap',
