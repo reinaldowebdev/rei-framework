@@ -2,7 +2,9 @@
     "name": "boritech/simulados",
     "type": "project",
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "twbs/bootstrap": "4.0.0",
+        "components/jquery": "^3.4"
     },
     "autoload": {
         "psr-4": {
