@@ -8,7 +8,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php config/dependency-manager.php"
+            "@php config/dependency-manager.php"
         ]
     },
     "autoload": {
